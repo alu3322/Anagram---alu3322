@@ -19,3 +19,7 @@ OptionParser.new do |opts|
       exit(-1)
   end
 end
+
+def signature_of(word)
+  word.unpack("c*").sort.pack("c*")
+end
